@@ -8,8 +8,7 @@
  * This will also require you to set OPENAI_API_KEY= in a `.env` file
  * You can run it with `npm run relay`, in parallel with `npm start`
  */
-const LOCAL_RELAY_SERVER_URL: string =
-  process.env.REACT_APP_LOCAL_RELAY_SERVER_URL || '';
+const LOCAL_RELAY_SERVER_URL: string | undefined = void 0;
 
 import { useEffect, useRef, useCallback, useState } from 'react';
 
