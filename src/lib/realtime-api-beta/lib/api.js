@@ -9,7 +9,7 @@ export class RealtimeAPI extends RealtimeEventHandler {
    */
   constructor({ url, apiKey, apiBase, dangerouslyAllowAPIKeyInBrowser, debug } = {}) {
     super();
-    this.defaultUrl = 'wss://api.openai.com/v1/realtime';
+    this.defaultUrl = 'wss://api.gptnb.ai/v1/realtime';
     this.url = url || apiBase || this.defaultUrl;
     this.apiKey = apiKey || null;
     this.debug = !!debug;
